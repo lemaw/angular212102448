@@ -13,6 +13,7 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import { HttpClientModule } from "@angular/common/http";
+import { Dashboard2Component } from './dashboard2/dashboard2.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from "@angular/common/http";
     SidebarComponent,
     ContentComponent,
     FooterComponent,
-    MahasiswaComponent
+    MahasiswaComponent,
+    Dashboard2Component
   ],
   imports: [
     BrowserModule,
