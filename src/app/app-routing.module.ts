@@ -6,15 +6,16 @@ import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
+import { otentikasiGuard } from './otentikasi.guard';
 
 const routes: Routes = [
   { path: "admin", component: AdminComponent },
-  { path: "dashboard", component: DashboardComponent },
-  { path: "dashboard2", component: Dashboard2Component },
+  { path: "dashboard", component: DashboardComponent, canActivate : [otentikasiGuard] },
+  { path: "dashboard2", component: Dashboard2Component, canActivate : [otentikasiGuard] },
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignupComponent},
   { path: "", redirectTo: "login", pathMatch: "full" },
-  { path: "mahasiswa", component: MahasiswaComponent }
+  { path: "mahasiswa", component: MahasiswaComponent, canActivate : [otentikasiGuard] }
 ];
 
 @NgModule({
