@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
+import { ForexComponent } from './forex/forex.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "admin", component: AdminComponent },
   { path: "dashboard", component: DashboardComponent, canActivate : [otentikasiGuard] },
   { path: "dashboard2", component: Dashboard2Component, canActivate : [otentikasiGuard] },
+  { path: "forex", component : ForexComponent, canActivate : [otentikasiGuard]},
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignupComponent},
   { path: "", redirectTo: "login", pathMatch: "full" },
