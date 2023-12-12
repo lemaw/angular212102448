@@ -7,17 +7,17 @@ import { ForexComponent } from './forex/forex.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
-import { otentikasiGuard } from './otentikasi.guard';
+import { OtentikasiGuard } from './otentikasi.guard';
 
 const routes: Routes = [
   { path: "admin", component: AdminComponent },
-  { path: "dashboard", component: DashboardComponent, canActivate : [otentikasiGuard] },
-  { path: "dashboard2", component: Dashboard2Component, canActivate : [otentikasiGuard] },
-  { path: "forex", component : ForexComponent, canActivate : [otentikasiGuard]},
+  { path: "dashboard", component: DashboardComponent, canActivate : [OtentikasiGuard] },
+  { path: "dashboard2", component: Dashboard2Component, canActivate : [OtentikasiGuard] },
+  { path: "forex", component : ForexComponent, canActivate : [OtentikasiGuard]},
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignupComponent},
   { path: "", redirectTo: "login", pathMatch: "full" },
-  { path: "mahasiswa", component: MahasiswaComponent, canActivate : [otentikasiGuard] }
+  { path: "mahasiswa", component: MahasiswaComponent, canActivate : [OtentikasiGuard] }
 ];
 
 @NgModule({

@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { CanActivateFn } from '@angular/router';
 
-import { otentikasiGuard } from './otentikasi.guard';
+import { OtentikasiGuard } from './otentikasi.guard';
 
-describe('otentikasiGuard', () => {
+describe('OtentikasiGuard', () => {
   const executeGuard: CanActivateFn = (...guardParameters) => 
-      TestBed.runInInjectionContext(() => otentikasiGuard(...guardParameters));
+      TestBed.runInInjectionContext(() => OtentikasiGuard(...guardParameters));
 
   beforeEach(() => {
     TestBed.configureTestingModule({});

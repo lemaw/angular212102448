@@ -1,7 +1,7 @@
 import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 
-export const otentikasiGuard: CanActivateFn = (route, state) => {
+export const OtentikasiGuard: CanActivateFn = (route, state) => {
   console.log("Otentikasi dimulai");
 
   var userId = sessionStorage.getItem("userId");
