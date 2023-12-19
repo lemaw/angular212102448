@@ -15,6 +15,7 @@ import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import { HttpClientModule } from "@angular/common/http";
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { ForexComponent } from './forex/forex.component';
+import { CuacaComponent } from './cuaca/cuaca.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ForexComponent } from './forex/forex.component';
     FooterComponent,
     MahasiswaComponent,
     Dashboard2Component,
-    ForexComponent
+    ForexComponent,
+    CuacaComponent
   ],
   imports: [
     BrowserModule,
